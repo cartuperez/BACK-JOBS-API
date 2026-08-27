@@ -78,6 +78,6 @@ public class JobServicelmplTest {
         assertNotNull(result);
         assertEquals(3, result.size());
         assertEquals("Developer", result.get(0).getName());
-        verify(jobApiRepository, times(2)).getAllJobs();
+        verify(jobApiRepository, times(1)).getAllJobs();
     }
 }
